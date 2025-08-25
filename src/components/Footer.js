@@ -23,9 +23,9 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/soumyajit4419"
+                href={process.env.REACT_APP_GITHUB_PROFILE}
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -35,7 +35,7 @@ function Footer() {
               <a
                 href="https://twitter.com/Soumyajit4419"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
@@ -45,7 +45,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/soumyajit4419/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -55,7 +55,7 @@ function Footer() {
               <a
                 href="https://www.instagram.com/soumyajit4419"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
