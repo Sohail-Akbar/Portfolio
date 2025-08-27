@@ -59,10 +59,10 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">YouTube Works</strong>
+        <h1 className="project-heading text-color">
+          <span className="text-color">My Recent</span> <strong className="purple">YouTube Works</strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p className="text-color">
           Here are my recent YouTube videos fetched dynamically.
         </p>
 

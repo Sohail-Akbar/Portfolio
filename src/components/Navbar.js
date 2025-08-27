@@ -35,23 +35,23 @@ function NavBar() {
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
+      style={{ borderBottom: "1px solid #ccc" }}
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
           <Navbar.Brand href="/" className="d-flex align-items-center">
-            <h4
+            <h4 className="text-color"
               style={{
                 margin: 0,
                 fontSize: "1.8rem",
                 fontFamily: "'Great Vibes', cursive", // Signature font
                 fontWeight: "normal",
-                color: "#fff",
                 letterSpacing: "2px"
               }}
             >
-              <span style={{ color: "#fff" }}>{"< "}</span>
+              <span className="text-color">{"< "}</span>
               Sohail
-              <span style={{ color: "#fff" }}>{" />"}</span>
+              <span className="text-color">{" />"}</span>
             </h4>
           </Navbar.Brand>
 
@@ -71,7 +71,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome className="text-color" style={{ marginBottom: "2px" }} /> <span className="text-color">Home</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -81,7 +81,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser className="text-color" style={{ marginBottom: "2px" }} /> <span className="text-color">About</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -91,10 +91,10 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <AiOutlineFundProjectionScreen className="text-color"
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                <span className="text-color">Projects</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -104,7 +104,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument className="text-color" style={{ marginBottom: "2px" }} /><span className="text-color">Resume</span>
               </Nav.Link>
             </Nav.Item>
           </Nav>

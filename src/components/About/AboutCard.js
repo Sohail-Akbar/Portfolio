@@ -7,7 +7,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "justify" }} className="text-color">
             Hi Everyone, I am <span className="purple">Sohail Akbar</span> from{" "}
             <span className="purple">Mian Channu, Pakistan.</span>
             <br />
@@ -31,22 +31,22 @@ function AboutCard() {
             Apart from coding, some other activities that I love to do:
           </p>
           <ul>
-            <li className="about-activity">
+            <li className="about-activity text-color">
               <ImPointRight /> Exploring new technologies
             </li>
-            <li className="about-activity">
+            <li className="about-activity text-color">
               <ImPointRight /> Freelancing & building projects
             </li>
-            <li className="about-activity">
+            <li className="about-activity text-color">
               <ImPointRight /> Learning and personal growth
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "rgb(155 126 172)" }} className="text-color">
             "Hard work and consistency always pay off — keep learning and keep
             building!"{" "}
           </p>
-          <footer className="blockquote-footer">Sohail Akbar</footer>
+          <footer className="blockquote-footer text-color">Sohail Akbar</footer>
         </blockquote>
       </Card.Body>
     </Card>

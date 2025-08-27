@@ -11,20 +11,20 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className="footer" style={{ borderTop: "1px solid #ccc" }}>
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Sohail</h3>
+        <Col md="4" className="footer-copywright text-color">
+          <h3 className="text-color">Designed and Developed by Sohail</h3>
         </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+        <Col md="4" className="footer-copywright text-color" >
+          <h3 className="text-color">Copyright © {year} SB</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
+                className="text-color"
                 href={process.env.REACT_APP_GITHUB_PROFILE}
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -33,8 +33,8 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
+                className="text-color"
                 href={process.env.REACT_APP_TIWITER_PROFILE}
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -43,8 +43,8 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
+                className="text-color"
                 href={process.env.REACT_APP_LINKDIN}
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,8 +53,8 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
+                className="text-color"
                 href={process.env.REACT_APP_INSTAGRAM}
-                style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

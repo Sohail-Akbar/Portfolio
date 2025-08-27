@@ -13,14 +13,14 @@ import { SiFiverr } from "react-icons/si";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="home-about-section" id="about" style={{ zIndex: 999 }}>
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.6em" }} className="text-color">
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body text-color">
               Hi, I’m <b className="purple">Sohail Akbar</b>, a passionate{" "}
               <b className="purple">Full Stack Web Developer</b> with strong
               experience in building modern, scalable, and user-friendly web
@@ -69,8 +69,8 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
+            <h1 className="text-color">FIND ME ON</h1>
+            <p className="text-color">
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">

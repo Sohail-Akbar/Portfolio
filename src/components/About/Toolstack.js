@@ -34,14 +34,13 @@ function Toolstack() {
           <div
             style={{
               fontSize: "3rem",
-              color: "#fff",
               marginBottom: "10px",
             }}
-            className="tool-icon"
+            className="tool-icon text-color"
           >
             {tool.icon}
           </div>
-          <p style={{ color: "#ddd", fontWeight: "500", fontSize: "0.9rem" }}>
+          <p style={{ fontWeight: "500", fontSize: "0.9rem" }} className="text-color">
             {tool.name}
           </p>
         </Col>

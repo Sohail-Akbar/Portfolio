@@ -28,7 +28,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: #fff;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -72,7 +72,8 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  /* background-color: #1b1a2ea9 !important; */
+  background-color: #fff !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -269,7 +270,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -416,7 +417,8 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  /* background-color: rgb(10, 4, 22); */
+  background-color: #fff;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important;
@@ -443,7 +445,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  /* color: white !important; */
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -465,7 +467,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /* background-image: var(--section-background-color) !important; */
 }
 
 .project-card {
@@ -566,8 +568,8 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important; */
+  /* color: white !important; */
 }
 
 .tech-icons {
@@ -628,8 +630,8 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important; */
+  /* color: white !important; */
 }
 
 .resume {
@@ -766,4 +768,12 @@ button:focus {
 
 .fork-btn-inner::after {
   display: none !important;
+}
+
+.icon-colour {
+  background: #ededed !important;
+}
+
+.react-pdf__Page {
+  border: 1px solid #ccc;
 }

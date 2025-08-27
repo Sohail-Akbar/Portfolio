@@ -23,7 +23,7 @@ function Home() {
           <Row>
             <Col md={7} className="home-header pt-0" style={{ zIndex: 999 }}>
               {/* Greeting */}
-              <h1 style={{ paddingBottom: 15 }} className="heading ps-0">
+              <h1 style={{ paddingBottom: 15 }} className="heading ps-0 text-color">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -31,7 +31,7 @@ function Home() {
               </h1>
 
               {/* Name */}
-              <h1 className="heading-name ps-0">
+              <h1 className="heading-name ps-0 text-color">
                 I'M
                 <strong className="main-name"> Sohail Akbar</strong>
               </h1>
@@ -42,7 +42,7 @@ function Home() {
               </div>
 
               {/* Short Description */}
-              <p style={{ color: "white", textAlign: "left", marginTop: "15px" }}>
+              <p className="text-color" style={{ textAlign: "left", marginTop: "15px" }}>
                 I’m a passionate <b className="purple">Full Stack Developer</b> who loves
                 building modern, scalable, and user-friendly web applications.
                 With experience in both <b className="purple">Frontend</b> and <b className="purple">Backend</b> development,

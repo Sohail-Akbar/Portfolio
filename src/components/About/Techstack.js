@@ -55,7 +55,7 @@ function Techstack() {
       {skills.map((skill, index) => (
         <Col key={index} xs={4} md={2} className="tech-icons text-center">
           <div style={{ fontSize: "3rem" }}>{skill.icon}</div>
-          <p style={{ marginTop: "10px", fontSize: "0.9rem", color: "#fff" }}>
+          <p style={{ marginTop: "10px", fontSize: "0.9rem" }} className="text-color">
             {skill.name}
           </p>
         </Col>
