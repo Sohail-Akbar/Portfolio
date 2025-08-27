@@ -1,69 +1,65 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
+  DiHtml5,
+  DiCss3,
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
+  DiMysql,
   DiGit,
-  DiJava,
+  DiPhp,
 } from "react-icons/di";
 import {
-  SiRedis,
+  SiTailwindcss,
+  SiBootstrap,
+  SiJquery,
+  SiExpress,
+  SiTypescript,
+  SiChartdotjs,
   SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { FaGithub, FaTrello, FaPython } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaPaintBrush } from "react-icons/fa"; // for Fabric.js / Konva.js
 
 function Techstack() {
+  const skills = [
+    { icon: <DiHtml5 />, name: "HTML" },
+    { icon: <DiCss3 />, name: "CSS" },
+    { icon: <DiJavascript1 />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "TypeScript" },
+    { icon: <SiBootstrap />, name: "Bootstrap" },
+    { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+    { icon: <SiJquery />, name: "jQuery" },
+    { icon: <DiPhp />, name: "PHP" },
+    { icon: <DiMysql />, name: "MySQLi" },
+    { icon: <DiNodejs />, name: "Node.js" },
+    { icon: <SiExpress />, name: "Express.js" },
+    { icon: <DiMongodb />, name: "MongoDB" },
+    { icon: <DiReact />, name: "React.js" },
+    { icon: <TbBrandNextjs />, name: "Next.js" },
+    { icon: <SiChartdotjs />, name: "Chart.js" },
+    { icon: <FaPaintBrush />, name: "Fabric.js" },
+    { icon: <FaPaintBrush />, name: "Konva.js" },
+    { icon: <DiGit />, name: "Git" },
+    { icon: <SiFirebase />, name: "Firebase" },
+    { icon: <FaGithub />, name: "GitHub" },
+    { icon: <FaTrello />, name: "Trello" },
+    { icon: <FaPython />, name: "Python" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
-      </Col>
+      {skills.map((skill, index) => (
+        <Col key={index} xs={4} md={2} className="tech-icons text-center">
+          <div style={{ fontSize: "3rem" }}>{skill.icon}</div>
+          <p style={{ marginTop: "10px", fontSize: "0.9rem", color: "#fff" }}>
+            {skill.name}
+          </p>
+        </Col>
+      ))}
     </Row>
   );
 }

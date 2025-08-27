@@ -9,23 +9,43 @@ import {
 } from "react-icons/si";
 
 function Toolstack() {
+  const tools = [
+    { icon: <SiMacos />, name: "macOS" },
+    { icon: <SiVisualstudiocode />, name: "VS Code" },
+    { icon: <SiPostman />, name: "Postman" },
+    { icon: <SiSlack />, name: "Slack" },
+    { icon: <SiVercel />, name: "Vercel" },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
+      {tools.map((tool, index) => (
+        <Col
+          key={index}
+          xs={4}
+          md={2}
+          className="tech-icons"
+          style={{
+            textAlign: "center",
+            marginBottom: "20px",
+            transition: "transform 0.3s ease",
+          }}
+        >
+          <div
+            style={{
+              fontSize: "3rem",
+              color: "#fff",
+              marginBottom: "10px",
+            }}
+            className="tool-icon"
+          >
+            {tool.icon}
+          </div>
+          <p style={{ color: "#ddd", fontWeight: "500", fontSize: "0.9rem" }}>
+            {tool.name}
+          </p>
+        </Col>
+      ))}
     </Row>
   );
 }

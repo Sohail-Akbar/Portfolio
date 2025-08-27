@@ -6,8 +6,10 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiFillYoutube,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { SiFiverr } from "react-icons/si";
 
 function Home2() {
   return (
@@ -19,37 +21,44 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              Hi, I’m <b className="purple">Sohail Akbar</b>, a passionate{" "}
+              <b className="purple">Full Stack Web Developer</b> with strong
+              experience in building modern, scalable, and user-friendly web
+              applications.
               <br />
-              <br />I am fluent in classics like
+              <br />
+              I work confidently with both{" "}
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple">Frontend and Backend </b>
               </i>
+              technologies. My core expertise includes:
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
+                  HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, jQuery,
+                  TypeScript
+                </b>{" "}
+                for frontend development, and{" "}
+                <b className="purple">
+                  PHP, MySQLi, Node.js, Express.js, MongoDB
+                </b>{" "}
+                for backend development.
               </i>
-              &nbsp; like
+              <br />
+              <br />
+              I also love working with{" "}
               <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+                <b className="purple">
+                  React.js, Chart.js, Fabric.js, and Konva.js
+                </b>
+              </i>{" "}
+              to build interactive and engaging applications.
+              <br />
+              <br />
+              My goal is to keep improving my skills and create impactful{" "}
+              <b className="purple">digital solutions</b> that solve real-world
+              problems.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -67,42 +76,75 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href={process.env.REACT_APP_GITHUB_PROFILE}
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href={process.env.REACT_APP_TIWITER_PROFILE}
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href={process.env.REACT_APP_LINKDIN}
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href={process.env.REACT_APP_INSTAGRAM}
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
                   <AiFillInstagram />
+                </a>
+              </li>
+              {/* WhatsApp */}
+              <li className="social-icons">
+                <a
+                  href={process.env.REACT_APP_WHATSAPP}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <FaWhatsapp />
+                </a>
+              </li>
+              {/* Fiverr */}
+              <li className="social-icons">
+                <a
+                  href={process.env.REACT_APP_FIVERR}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <SiFiverr />
+                </a>
+              </li>
+              {/* YouTube */}
+              <li className="social-icons">
+                <a
+                  href={process.env.REACT_APP_YOUTUBE}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillYoutube />
                 </a>
               </li>
             </ul>
