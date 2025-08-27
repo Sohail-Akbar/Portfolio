@@ -19,10 +19,11 @@ import {
   SiTypescript,
   SiChartdotjs,
   SiFirebase,
+  SiCodeigniter
 } from "react-icons/si";
-import { FaGithub, FaTrello, FaPython } from "react-icons/fa";
+import { FaGithub, FaTrello, FaPython, FaLaravel } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaPaintBrush } from "react-icons/fa"; // for Fabric.js / Konva.js
+import { FaPaintBrush, FaCode } from "react-icons/fa"; // for Fabric.js / Konva.js
 
 function Techstack() {
   const skills = [
@@ -34,6 +35,8 @@ function Techstack() {
     { icon: <SiTailwindcss />, name: "Tailwind CSS" },
     { icon: <SiJquery />, name: "jQuery" },
     { icon: <DiPhp />, name: "PHP" },
+    { icon: <FaLaravel />, name: "Laravel" },       // 🔹 New
+    { icon: <SiCodeigniter />, name: "CodeIgniter" }, // 🔹 New
     { icon: <DiMysql />, name: "MySQLi" },
     { icon: <DiNodejs />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express.js" },
@@ -43,6 +46,7 @@ function Techstack() {
     { icon: <SiChartdotjs />, name: "Chart.js" },
     { icon: <FaPaintBrush />, name: "Fabric.js" },
     { icon: <FaPaintBrush />, name: "Konva.js" },
+    { icon: <FaCode />, name: "Canvas" },
     { icon: <DiGit />, name: "Git" },
     { icon: <SiFirebase />, name: "Firebase" },
     { icon: <FaGithub />, name: "GitHub" },

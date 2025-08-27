@@ -28,6 +28,7 @@ function ProjectCards(props) {
             href={props.demoLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
+            className="marigntop-sm-3"
           >
             <CgWebsite /> &nbsp;
             {"Watch Video"}
